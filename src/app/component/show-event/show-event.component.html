@@ -1,0 +1,19 @@
+<table class="table-bordered table-sm">
+    <thead style="font-weight:750;background-color:#303030;color:white;text-align:center">
+        <tr>
+            <td scope="col">Name</td>
+            <td scope="col">description</td>
+            <td scope="col">Location</td>
+            <td scope="col">Date</td>
+            <td scope="col">Time</td>
+        </tr>
+    </thead>
+
+        <tr scope="row" *ngFor="let item of event">
+            <td *ngIf >{{item.EventName}}</td>
+            <td  *ngIf >{{item.description}}</td>
+            <td  *ngIf>{{item.Location}}</td>
+            <td  *ngIf>{{item.date}}</td>
+            <td  *ngIf>{{item.time}}</td>
+      
+</table>

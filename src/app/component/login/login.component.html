@@ -1,0 +1,27 @@
+<div class="container">
+<div class ="login">
+  <h1>Login to App</h1>
+  <div class="col-md-4 offset-md-4">
+    <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && handleSubmit()">
+      <div class="login">
+        <label for="username">Username</label>
+        <input appCustomValidator type="text" name="username" [(ngModel)]="model.username" id="username" class="form-control" [ngClass]="{ 'is-invalid': username.touched && username.invalid }" required #username="ngModel">
+        <span class="invalid-feedback"></span>
+      </div>
+
+      <div class="login">
+        <label for="password">Password</label>
+        <input type="password" name="password" [(ngModel)]="model.password" id="password" class="form-control" [ngClass]="{ 'is-invalid': password.touched && password.invalid }" required #password="ngModel">
+        <span class="invalid-feedback"></span>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-lg" [disabled]="loginForm.invalid">Login</button>
+      <div class="login-help">
+        <p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+      </div>
+    </form>
+   
+  </div>
+  </div>
+
+</div>

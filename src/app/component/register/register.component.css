@@ -1,0 +1,21 @@
+.container {
+    margin: 50px auto;
+    width: 640px;
+  }
+  .register {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 20px 20px;
+    width: 310px;
+  }
+  
+   
+  :-moz-placeholder {
+    color: #c9c9c9 !important;
+    font-size: 13px;
+  }
+   
+  ::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 13px;
+  }

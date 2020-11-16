@@ -1,0 +1,40 @@
+<form #loginForm="ngForm" (ngSubmit)="loginForm.valid && handleSubmit()">
+    <h3 align="center">Register</h3>
+    <div class="event">
+        <label for="name">EventName</label>
+        <input type="text" name="name" [(ngModel)]="model.name" id="name" class="form-control"
+            required #name="ngModel">
+        <span class="invalid-feedback"></span>
+    </div>
+
+    <div class="event">
+        <label for="description">Description</label>
+        <input type="text" name="description" [(ngModel)]="model.description" id="description" class="form-control"
+           required #description="ngModel">
+        <span class="invalid-feedback"></span>
+    </div>
+
+    <div class="event">
+        <label for="Location">Location</label>
+        <input type="text" name="Location" [(ngModel)]="model.Location" id="Location" class="form-control"
+           required #Location="ngModel">
+        <span class="invalid-feedback"></span>
+    </div>
+    <div class="event">
+        <label for="date">Date</label>
+        <input type="text" name="date" [(ngModel)]="model.date" id="date" class="form-control"
+           required #Location="ngModel">
+        <span class="invalid-feedback"></span>
+    </div>
+    <div class="event">
+        <label for="Time">Time</label>
+        <input type="text" name="Time" [(ngModel)]="model.Time" id="Time" class="form-control"
+           required #Time="ngModel">
+        <span class="invalid-feedback"></span>
+    </div>
+    <div class="event">
+        <button class="btn btn-info" type="submit" [disabled]="loginForm.invalid">Register</button>&nbsp;
+        <button class="btn btn-warning" type="reset" [disabled]="loginForm.invalid">Reset</button>
+    </div>
+</form>
+<hr>

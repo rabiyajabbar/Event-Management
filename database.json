@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user",
+      "password": "12345",
+      "firstName": "rabiya",
+      "lastName": "jabbar",
+      "email": "rj@gmail.com",
+      "auth" : "user"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "admin",
+      "firstName": "admin",
+      "lastName": "user",
+      "email": "admin@admin.com",
+      "auth" : "admin"
+    }
+  ],
+  "events": [
+    {
+      "name": "birthday",
+      "date": "01/03/20",
+      "time":"5:00PM",
+      "duration":"3 hours 15minutes",
+      "id": 1
+
+
+    },
+    {
+      "name": "marriage",
+      "date": "11/03/18",
+      "time":"9:00PM",
+      "duration":"3hours",
+      "id": 2
+    }
+  ]
+}
